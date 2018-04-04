@@ -1,0 +1,74 @@
+_ReSharper*
+[Bb]in/
+obj/
+objd/
+debug/
+out/
+tmp/
+packages/
+App_Data
+*.user
+*.sln.cache
+*.userosscache
+*.suo
+*.*~
+*.swp
+TestResults
+[Tt]humbs.db
+
+TestResults
+[Tt]humbs.db
+*.log
+*.err
+*.bak
+OACRTemp/
+build_logs/
+lock
+/public/inc/bldver.*
+/public/inc/sources.ver
+/data
+*.projhash*
+*.slnhash*
+# quickbuild.exe
+/target/distrib/*
+/VersionGeneratingLogs/
+QLogs
+QLocal
+QTestLogs
+QLogs
+QLocal
+QTestLogs
+pingme.txt
+.vs/
+
+Meeting Minutes-bfcad7d264d9.json
+
+BSDMeeting/
+
+# bad tlb/chm generators in nmake tree
+*.tlb
+*.chm
+
+# silverlight
+ClientBin/
+
+# azure
+*.build.csdef
+csx/
+/version
+/__cbcOutput/debug/amd64/private
+
+# Test Output
+*.FxCopReport.xml
+*.TestErrors.txt
+*.TestOutput.txt
+*.TestResults.xml
+
+
+# python compiled files
+*.pyc
+
+
+
+# StyleCop
+StyleCop.Cache
