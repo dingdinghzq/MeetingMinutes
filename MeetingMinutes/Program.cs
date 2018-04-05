@@ -11,20 +11,12 @@ namespace MeetingMinutes
 {
     using System;
     using System.IO;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using CognitiveServicesAuthorization;
-    using Microsoft.Bing.Speech;
     using System.Linq;
     using YoutubeExtractor;
     using System.Collections.Generic;
     using System.Diagnostics;
     using NAudio.Wave;
-    using Google.Cloud.Speech.V1;
 
-    /// <summary>
-    /// This sample program shows how to use <see cref="SpeechClient"/> APIs to perform speech recognition.
-    /// </summary>
     public class Program
     {
 
@@ -32,18 +24,15 @@ namespace MeetingMinutes
 
         private const string WorkingFolder = "BSDMeeting";
 
-        /// <summary>
-        /// The entry point to this sample program. It validates the input arguments
-        /// and sends a speech recognition request using the Microsoft.Bing.Speech APIs.
-        /// </summary>
-        /// <param name="args">The input arguments.</param>
         public static void Main(string[] args)
         {
             if (args.Length != 1)
             {
                 Console.WriteLine("Usage: MeetingMinutes <YoutubeUrl>");
                 Console.WriteLine("  Example: MeetingMinutes https://youtu.be/nNDMLPP5nq4");
+                return;
             }
+
             var p = new Program();
             Console.WriteLine($"Downloading video... {args[0]}");
             string videoFile = p.DownloadVideo(args[0]);
